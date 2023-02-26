@@ -71,7 +71,10 @@ const showDetails = data => {
     const image = document.getElementById("img");
     image.innerHTML = `
     <img src="${details.strMealThumb}">
-    `
+
+    `;
+    const area = document.getElementById("area");
+    area.innerText = `Area:   ${details.strArea}`;
     const mealDetails = document.getElementById("mealDetails");
     mealDetails.innerText = details.strInstructions;
   })
